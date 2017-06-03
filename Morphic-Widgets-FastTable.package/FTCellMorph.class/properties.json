@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "CyrilFerlicot 11/17/2015 14:08",
+	"super" : "Morph",
+	"category" : "Morphic-Widgets-FastTable",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"topSeparator",
+		"columnSelectionColor",
+		"table"
+	],
+	"name" : "FTCellMorph",
+	"type" : "normal"
+}

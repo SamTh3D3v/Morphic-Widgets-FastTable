@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "ElhamerOussama 5/27/2017 19:48",
+	"super" : "TestCase",
+	"category" : "Morphic-Widgets-FastTable-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"table"
+	],
+	"name" : "FTSelectionTest",
+	"type" : "normal"
+}

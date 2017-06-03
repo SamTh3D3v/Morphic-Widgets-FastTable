@@ -1,0 +1,6 @@
+private
+createSampleModels:anInterger
+	|coll|
+	coll := OrderedCollection new.
+	1 to: anInterger do: [:cpt | coll add: (FTSampleClassModel prop1:'property 1.',cpt asString  prop2: 'property 2.',cpt asString prop3: 'property 3.',cpt asString)]. 
+	^ coll.

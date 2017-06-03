@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "ElhamerOussama 5/30/2017 15:09",
+	"super" : "Object",
+	"category" : "Morphic-Widgets-FastTable-Selection",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"table"
+	],
+	"name" : "FTCellSelectionStrategy",
+	"type" : "normal"
+}

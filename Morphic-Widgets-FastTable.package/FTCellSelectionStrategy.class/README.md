@@ -1,0 +1,1 @@
+I define a strategy to handle cell selections. 

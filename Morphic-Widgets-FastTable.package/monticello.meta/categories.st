@@ -1,0 +1,11 @@
+SystemOrganization addCategory: #'Morphic-Widgets-FastTable'!
+SystemOrganization addCategory: 'Morphic-Widgets-FastTable-Announcement'!
+SystemOrganization addCategory: 'Morphic-Widgets-FastTable-DataSource'!
+SystemOrganization addCategory: 'Morphic-Widgets-FastTable-Easy'!
+SystemOrganization addCategory: 'Morphic-Widgets-FastTable-Examples'!
+SystemOrganization addCategory: 'Morphic-Widgets-FastTable-Functions'!
+SystemOrganization addCategory: 'Morphic-Widgets-FastTable-PluggableAdaptor'!
+SystemOrganization addCategory: 'Morphic-Widgets-FastTable-Selection'!
+SystemOrganization addCategory: 'Morphic-Widgets-FastTable-Tests'!
+SystemOrganization addCategory: 'Morphic-Widgets-FastTable-Tree'!
+SystemOrganization addCategory: 'Morphic-Widgets-FastTable-Tree-Basic'!

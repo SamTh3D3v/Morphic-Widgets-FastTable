@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "EstebanLorenzano 5/15/2015 12:08",
+	"super" : "RowLayout",
+	"category" : "Morphic-Widgets-FastTable",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FTRowLayout",
+	"type" : "normal"
+}

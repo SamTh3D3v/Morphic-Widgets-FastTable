@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "ElhamerOussama 5/27/2017 19:49",
+	"super" : "Object",
+	"category" : "Morphic-Widgets-FastTable-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"property1",
+		"property2",
+		"property3"
+	],
+	"name" : "FTSampleClassModel",
+	"type" : "normal"
+}

@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "CyrilFerlicot 11/17/2015 14:48",
+	"super" : "Morph",
+	"category" : "Morphic-Widgets-FastTable",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"needsRefreshExposedRows",
+		"headerRow",
+		"exposedRows"
+	],
+	"name" : "FTTableContainerMorph",
+	"type" : "normal"
+}

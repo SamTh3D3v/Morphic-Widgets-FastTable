@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "FTSimpleDataSource",
+	"category" : "Morphic-Widgets-FastTable-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FTExampleMethodListDataSource",
+	"type" : "normal"
+}
