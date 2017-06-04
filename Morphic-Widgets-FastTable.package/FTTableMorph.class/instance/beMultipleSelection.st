@@ -2,4 +2,4 @@ accessing
 beMultipleSelection
    selectionMode == #row
 	ifTrue:[selectionStrategy := FTMultipleSelection table: self]
-	ifFalse:['todo']
+	ifFalse:[selectionStrategy := FTCellMultipleSelection table: self]
