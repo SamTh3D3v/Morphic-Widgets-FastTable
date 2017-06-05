@@ -1,7 +1,7 @@
 examples
 exampleTable6
 	"Show a table with cell selection mode, and enable editing them on double click"
-	"this class uses the test SampleDataSource implemented in tests"
+	"this class uses the SampleDataSource implemented in test sub package"
 	<example>
 	|table ds|
 ds:=FTSampleDataSource new:10.
@@ -14,7 +14,7 @@ table := FTTableMorph new
 		dataSource: ds;
 		selectRowIndex: 1;
 		showFirstRowSelection;	
-		beSingleSelection;
+		beMultipleSelection;
 		onAnnouncement: FTSelectionChanged 
 			do: [ :ann | ('rows selected: ', (ann newSelectedRowIndexes asString)) crLog ];
 		onAnnouncement: FTCellStrongSelectionChanged 
