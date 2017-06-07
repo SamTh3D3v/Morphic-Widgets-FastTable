@@ -1,7 +1,7 @@
 examples
 exampleTable6
 	"Show a table with cell selection mode, and enable editing them on double click"
-	"this class uses the SampleDataSource implemented in test sub package"
+	"this class uses the test SampleDataSource implemented in tests"
 	<example>
 	|table ds|
 ds:=FTSampleDataSource new:10.
