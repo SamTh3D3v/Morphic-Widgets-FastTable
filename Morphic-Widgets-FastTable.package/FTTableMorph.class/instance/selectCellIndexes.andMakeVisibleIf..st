@@ -1,12 +1,11 @@
 accessing selection
 selectCellIndexes: anArray andMakeVisibleIf: shouldEnsureVisibleSelection
-"#todo to be implemented"
 	| oldSelectedCellIndexes |
 	anArray = selectedCellsIndexes
 		ifTrue: [ ^ self ].
 	oldSelectedCellIndexes := selectedCellsIndexes.
 	self basicSelectCellIndexes: anArray.
-"	shouldEnsureVisibleSelection ifTrue: [ self ensureVisibleFirstSelection ]. "
+	shouldEnsureVisibleSelection ifTrue: [ self ensureVisibleFirstCellSelection ]. 
 	self refresh.
 	self
 		doAnnounce:

@@ -10,6 +10,7 @@ exampleList2
 		selectRowIndex: 42;
 		showFirstRowSelection;
 		allowDeselection;
+		beMultipleSelection;
 		yourself.
 
 	^ list openInWindow
