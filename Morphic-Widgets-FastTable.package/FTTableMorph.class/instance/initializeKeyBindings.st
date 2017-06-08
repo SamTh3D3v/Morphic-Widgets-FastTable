@@ -15,10 +15,14 @@ initializeKeyBindings
 		toAction: [ :target :morph :event | self keyStrokeArrowRight: event ].
 	self 
 		bindKeyCombination: Character home asKeyCombination
-		toAction: [ self selectRowIndex: 1 ].
+		toAction: [ selectionMode==#row
+			ifTrue:[self selectRowIndex: 1 ]
+			ifFalse:[self selectCellIndex: #(1 1)]].
 	self 
 		bindKeyCombination: Character end asKeyCombination
-		toAction: [ self selectRowIndex: self numberOfRows ].
+		toAction: [selectionMode==#row
+			 ifTrue:[self selectRowIndex: self numberOfRows]
+			ifFalse:[self selectCellIndex: (Array with:self numberOfRows with: self numberOfColumns)]].
 	self 
 		bindKeyCombination: $a meta  
 		toAction: [ selectionMode==#row
