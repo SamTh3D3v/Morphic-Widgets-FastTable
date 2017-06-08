@@ -17,7 +17,7 @@ selectCellIndexesUpTo: endIndex
 		ifFalse: [ -1 ]. 
 		tupleCollection:=OrderedCollection  new. "holds cell indexes from the firt to the last selected cell"
 		firstIndex second to: endIndex second by: stepH do:[:v| 
-		firstIndex first to: endIndex first by: stepV do:[:h| tupleCollection add: (Array with:h with:v)  ].
+		 firstIndex first to: endIndex first by: stepV do:[:h| tupleCollection add: (Array with:h with:v)  ].
 		].
 		
 
