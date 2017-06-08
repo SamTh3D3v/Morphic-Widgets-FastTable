@@ -21,4 +21,6 @@ initializeKeyBindings
 		toAction: [ self selectRowIndex: self numberOfRows ].
 	self 
 		bindKeyCombination: $a meta  
-		toAction: [ self selectAllRowIndexes ]
+		toAction: [ selectionMode==#row
+			ifTrue:[self selectAllRowIndexes]
+			ifFalse:[self selectAllCells ]].

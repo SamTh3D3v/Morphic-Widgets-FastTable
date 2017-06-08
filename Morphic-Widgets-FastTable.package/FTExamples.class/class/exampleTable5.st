@@ -12,7 +12,7 @@ exampleTable5
 		addColumn: (FTColumn id: 'Origin');
 		dataSource: ds;
 		selectRowIndex: 1;
-		beSingleSelection;
+		beMultipleSelection;
 		showFirstRowSelection;
 
 		yourself.
