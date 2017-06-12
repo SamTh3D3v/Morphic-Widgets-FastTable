@@ -5,7 +5,7 @@ selectRowIndexes: anArray andMakeVisibleIf: shouldEnsureVisibleSelection
 		ifTrue: [ ^ self ].
 	oldSelectedRowIndexes := selectedRowIndexes.
 	self basicSelectRowIndexes: anArray.
-	shouldEnsureVisibleSelection ifTrue: [ self ensureVisibleFirstSelection ].
+	shouldEnsureVisibleSelection ifTrue: [ self ensureVisibleFirstRowSelection ].
 	self refresh.
 	self
 		doAnnounce:
