@@ -8,7 +8,8 @@
 	"instvars" : [
 		"property1",
 		"property2",
-		"property3"
+		"property3",
+		"property4"
 	],
 	"name" : "FTSampleClassModel",
 	"type" : "normal"

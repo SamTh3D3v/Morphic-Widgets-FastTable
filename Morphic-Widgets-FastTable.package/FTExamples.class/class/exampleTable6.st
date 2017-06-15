@@ -11,6 +11,7 @@ table := FTTableMorph new
 		addColumn: (FTColumn id: 'column1');
 		addColumn: (FTColumn id: 'column2');
 		addColumn: (FTColumn id: 'column3');		
+		addColumn: (FTColumn id: 'column4');	
 		dataSource: ds;
 		selectRowIndex: 1;
 		showFirstRowSelection;	
