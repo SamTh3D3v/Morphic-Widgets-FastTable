@@ -1,10 +1,10 @@
 initialization
 setupCheckBox
-	self checkbox:CheckboxMorph new.
+	self checkbox:(CheckboxMorph on:self selected: #content
+   changeSelected: #content:).
 	checkbox 	beCheckbox;
 	color: Color transparent;
 	vResizing: #spaceFill;
+	hResizing: #spaceFill;
 	height: self bounds height;
-   width: self bounds width;
-	toggleSelected;
-	label: 'label'
+   width: self bounds width
