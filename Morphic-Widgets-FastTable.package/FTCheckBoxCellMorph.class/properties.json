@@ -5,7 +5,11 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"checkbox",
+		"content",
+		"allowEdit"
+	],
 	"name" : "FTCheckBoxCellMorph",
 	"type" : "normal"
 }
