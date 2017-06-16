@@ -1,6 +1,6 @@
 drawing
 drawOn: canvas
-	| x y cellWidth cellHeight rowsToDisplay rowSubviews highligtedRowIndexes primarySelectionIndex SelectedCellIndexes|
+	| x y cellWidth cellHeight rowsToDisplay rowSubviews highligtedRowIndexes primarySelectionIndex primarySelectionCellIndex SelectedCellIndexes|
 	
 	super drawOn: canvas.
 	self canRefreshValues ifFalse: [ ^ self ]. "Nothing to update yet"
@@ -16,6 +16,8 @@ drawOn: canvas
 		
 	SelectedCellIndexes := self owner selectedCellsIndexes.
 	primarySelectionIndex := self owner selectedRowIndex.
+	primarySelectionCellIndex := self owner selectedCellsIndex.
+
 	
 	"For some superweird reason, calling #calculateExposedRows here instead in #changed (where
 	 it should be called) is 10x faster. Since the whole purpose of this component is speed, for 
@@ -40,7 +42,7 @@ drawOn: canvas
 		(self owner selectionMode == #column)		 
 		 ifTrue: [row submorphs withIndexDo: [ :each :columnIndex |
 				 (SelectedCellIndexes includes: (Array with:rowIndex with:columnIndex)) 
-					ifTrue: [ each columnSelectionColor: self owner selectionColor ]]]	
+					ifTrue: [ each columnSelectionColor: (self owner colorForSelection:(primarySelectionCellIndex first = rowIndex and:primarySelectionCellIndex second = columnIndex )) ]]]	
 				ifFalse:[(highligtedRowIndexes includes: rowIndex) ifTrue: [ 
 			row selectionColor: (self owner colorForSelection: primarySelectionIndex = rowIndex) ]]	
 		].
