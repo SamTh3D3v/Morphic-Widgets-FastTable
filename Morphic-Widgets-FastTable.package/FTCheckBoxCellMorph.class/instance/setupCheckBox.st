@@ -7,5 +7,4 @@ setupCheckBox
 	vResizing: #spaceFill;
 	hResizing: #spaceFill;
 	height: self bounds height;
-   width: self bounds width;
-	enabled: self allowEdit.
+   width: self bounds width.
