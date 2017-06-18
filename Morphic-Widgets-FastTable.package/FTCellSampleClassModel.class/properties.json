@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "ElhamerOussama 6/17/2017 04:00",
+	"super" : "Object",
+	"category" : "Morphic-Widgets-FastTable-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"property1",
+		"property2",
+		"property3",
+		"property4",
+		"property5"
+	],
+	"name" : "FTCellSampleClassModel",
+	"type" : "normal"
+}

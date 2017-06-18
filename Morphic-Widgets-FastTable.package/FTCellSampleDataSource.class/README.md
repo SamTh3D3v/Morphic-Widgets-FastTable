@@ -1,0 +1,1 @@
+This is a SimpleDataSource that populate a fastTable with FTCellSampleClassModel objects. This datasource populate itself with sample data as well.

@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "ElhamerOussama 6/17/2017 03:59",
+	"super" : "FTSimpleDataSource",
+	"category" : "Morphic-Widgets-FastTable-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FTCellSampleDataSource",
+	"type" : "normal"
+}

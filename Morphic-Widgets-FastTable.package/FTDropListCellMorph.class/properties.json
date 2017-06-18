@@ -5,7 +5,13 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
-	"name" : "FTComboBoxCellMorph",
+	"instvars" : [
+		"dropList",
+		"selectedItem",
+		"index",
+		"itemSource",
+		"allowEdit"
+	],
+	"name" : "FTDropListCellMorph",
 	"type" : "normal"
 }

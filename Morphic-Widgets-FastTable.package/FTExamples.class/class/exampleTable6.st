@@ -4,14 +4,15 @@ exampleTable6
 	"this class uses the test SampleDataSource implemented in tests"
 	<example>
 	|table ds|
-ds:=FTSampleDataSource new:10.
+ds:=FTCellSampleDataSource new:10.
 table := FTTableMorph new
 		extent: 500@500;
 		selectionMode: #column;
 		addColumn: (FTColumn id: 'column1');
 		addColumn: (FTColumn id: 'column2');
-		addColumn: (FTColumn id: 'column3');		
-		addColumn: (FTColumn id: 'column4');	
+		addColumn: (FTColumn id: 'column3');			
+		addColumn: (FTColumn id: 'column4');
+		addColumn: (FTColumn id: 'column5');	
 		dataSource: ds;
 		selectRowIndex: 1;
 		showFirstRowSelection;	

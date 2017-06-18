@@ -1,3 +1,3 @@
 instance creation
 new
-	self error: 'use #color: table: allowEdit:'
+	self error: 'use #table: content: allowEdit:'
