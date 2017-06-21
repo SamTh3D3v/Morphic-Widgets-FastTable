@@ -1,3 +1,5 @@
 testing
 hasSelection
-	^ self selectedRowIndexes notEmpty
+self selectionMode ==#row
+	ifTrue:[^ self selectedRowIndexes notEmpty]
+	ifFalse:[^ self selectedCellsIndexes notEmpty]

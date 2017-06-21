@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "ElhamerOussama 6/21/2017 03:01",
+	"super" : "Object",
+	"category" : "Morphic-Widgets-FastTable",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "PlatformSpecificKeyCombination",
+	"type" : "normal"
+}

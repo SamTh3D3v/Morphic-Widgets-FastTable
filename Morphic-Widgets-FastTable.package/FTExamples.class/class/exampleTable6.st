@@ -33,5 +33,6 @@ table := FTTableMorph new
 					table refresh].
 				ed openEditorWithContents: ((ds elements at: index first)  instVarAt: index second).
 		];
+	   allowDeselection;
 		yourself.
 		table openInWindow.
