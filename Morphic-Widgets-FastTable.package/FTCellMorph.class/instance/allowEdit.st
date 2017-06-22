@@ -1,0 +1,3 @@
+accessing
+allowEdit
+	^allowEdit

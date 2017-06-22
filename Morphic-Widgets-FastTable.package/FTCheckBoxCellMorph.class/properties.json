@@ -7,8 +7,7 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"checkbox",
-		"content",
-		"allowEdit"
+		"content"
 	],
 	"name" : "FTCheckBoxCellMorph",
 	"type" : "normal"

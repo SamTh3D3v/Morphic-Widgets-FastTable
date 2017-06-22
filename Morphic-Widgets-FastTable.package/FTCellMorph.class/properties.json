@@ -8,7 +8,8 @@
 	"instvars" : [
 		"topSeparator",
 		"columnSelectionColor",
-		"table"
+		"table",
+		"allowEdit"
 	],
 	"name" : "FTCellMorph",
 	"type" : "normal"

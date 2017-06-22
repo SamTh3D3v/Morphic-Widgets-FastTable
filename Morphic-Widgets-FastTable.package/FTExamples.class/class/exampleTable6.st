@@ -20,10 +20,9 @@ table := FTTableMorph new
 		onAnnouncement: FTSelectionChanged 
 			do: [ :ann | ('rows selected: ', (ann newSelectedRowIndexes asString)) crLog ];
 		onAnnouncement: FTCellStrongSelectionChanged 
-			do: [ :ann | |index morph ep |
-				index := ann selectedCellIndex.
-				morph := table visibleCellMorphAtIndex: index.			
-				ep := EditingProvider dateSource:ds. ep addCellEditingEvents: morph at:index.
+			do: [ :ann | |index ep|
+				index := ann selectedCellIndex.	
+				ep := EditingProvider dateSource:ds. ep addCellEditingEvents:index.
 		];
 	   allowDeselection;
 		yourself.

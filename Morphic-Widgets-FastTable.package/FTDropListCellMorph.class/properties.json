@@ -9,8 +9,7 @@
 		"dropList",
 		"selectedItem",
 		"index",
-		"itemSource",
-		"allowEdit"
+		"itemSource"
 	],
 	"name" : "FTDropListCellMorph",
 	"type" : "normal"
