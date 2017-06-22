@@ -1,5 +1,5 @@
 initialization
-initialize:aTable content: aBooleanContent allowEdit: aBoolean
+initialize: aTable content: aBooleanContent allowEdit: aBoolean
 
 	super initialize.
 	self table: aTable.

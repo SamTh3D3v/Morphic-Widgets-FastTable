@@ -20,18 +20,10 @@ table := FTTableMorph new
 		onAnnouncement: FTSelectionChanged 
 			do: [ :ann | ('rows selected: ', (ann newSelectedRowIndexes asString)) crLog ];
 		onAnnouncement: FTCellStrongSelectionChanged 
-			do: [ :ann | |index morph ed |
+			do: [ :ann | |index morph ep |
 				index := ann selectedCellIndex.
-				morph := table visibleCellMorphAtIndex: index.
-				ed := RubFloatingEditorBuilder new
-					customizeEditorWith: [ :editor | 
-						editor scrollbarsShowNever.
-						editor bounds: (morph bounds insetBy: (Margin left: -2 top: 0 right: 0 bottom: 0  ))
-					];
-				withEditedContentsDo: [ :editedContents | 
-					(ds elements at: index first) instVarAt:index second put: editedContents asString.
-					table refresh].
-				ed openEditorWithContents: ((ds elements at: index first)  instVarAt: index second).
+				morph := table visibleCellMorphAtIndex: index.			
+				ep := EditingProvider dateSource:ds. ep addCellEditingEvents: morph at:index.
 		];
 	   allowDeselection;
 		yourself.
