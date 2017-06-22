@@ -1,6 +1,6 @@
 accessing
 prop4Column: column row: rowIndex
-	^ FTCheckBoxCellMorph table: table content: ((self elementAt: rowIndex) porperty4 ) allowEdit: false
+	^ FTCheckBoxCellMorph table: table content: ((self elementAt: rowIndex) property4 ) allowEdit: false
 	"^ FTCellMorph new
 		color: (Color transparent);
 		table: table;

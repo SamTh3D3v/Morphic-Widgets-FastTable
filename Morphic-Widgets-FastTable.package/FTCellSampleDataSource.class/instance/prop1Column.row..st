@@ -1,7 +1,8 @@
 accessing
 prop1Column: column row: rowIndex
-	^ FTCellMorph new  
+	^ FTTextEditCellMorph table: table content: ((self elementAt: rowIndex) property1 ) allowEdit: true
+	"^ FTCellMorph new  
 		color: (Color transparent);
 		table: table;
-      addMorphBack: (self elementAt: rowIndex) porperty1 asStringMorph;		
-		yourself
+      addMorphBack: (self elementAt: rowIndex) property1 asStringMorph;		
+		yourself"

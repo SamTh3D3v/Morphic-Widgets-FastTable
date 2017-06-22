@@ -1,1 +1,1 @@
-TextEdit Cell Morph
+I am TextEdit Cell Morph, i view the cell's data as a simple text morphs, and when an editing event occurs i use the floating editor to create an edting cell.

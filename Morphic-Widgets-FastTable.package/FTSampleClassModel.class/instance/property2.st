@@ -1,3 +1,3 @@
 accessing
-porperty2
+property2
 	^property2

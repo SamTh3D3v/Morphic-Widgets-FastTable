@@ -1,14 +1,11 @@
 {
-	"commentStamp" : "ElhamerOussama 6/22/2017 14:30",
+	"commentStamp" : "ElhamerOussama 6/22/2017 03:35",
 	"super" : "FTIndentedCellMorph",
 	"category" : "Morphic-Widgets-FastTable",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"content",
-		"allowEdit"
-	],
-	"name" : "FTTextEditCellMorph",
+	"instvars" : [ ],
+	"name" : "FTDateCellMorph",
 	"type" : "normal"
 }
