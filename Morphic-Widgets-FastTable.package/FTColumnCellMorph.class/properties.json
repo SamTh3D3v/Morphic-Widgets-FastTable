@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "ElhamerOussama 6/23/2017 13:14",
+	"super" : "FTCellMorph",
+	"category" : "Morphic-Widgets-FastTable",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "FTColumnCellMorph",
+	"type" : "normal"
+}

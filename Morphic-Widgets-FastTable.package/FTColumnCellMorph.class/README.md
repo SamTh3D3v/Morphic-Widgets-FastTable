@@ -1,0 +1,1 @@
+I represent a column cell morph, i handle mouse click and double to trigger the needed functionalities.
