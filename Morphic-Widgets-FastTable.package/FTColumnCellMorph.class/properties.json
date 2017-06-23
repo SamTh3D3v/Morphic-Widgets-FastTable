@@ -5,7 +5,10 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"isColumnOrderedFromLeast",
+		"isColumnOrderedFromGreatest"
+	],
 	"name" : "FTColumnCellMorph",
 	"type" : "normal"
 }
