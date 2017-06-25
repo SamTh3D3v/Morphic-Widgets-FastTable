@@ -6,9 +6,10 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
+		"id",
 		"isColumnOrderedFromLeast",
 		"isColumnOrderedFromGreatest"
 	],
-	"name" : "FTColumnCellMorph",
+	"name" : "FTHeaderColumnCellMorph",
 	"type" : "normal"
 }
