@@ -4,5 +4,6 @@ headerColumn: column
 	^ FTHeaderColumnCellMorph new 
 		listCentering: #center;
 		id: column id;
+		table:self table;
 		addMorph: column id asMorph;
 		yourself
