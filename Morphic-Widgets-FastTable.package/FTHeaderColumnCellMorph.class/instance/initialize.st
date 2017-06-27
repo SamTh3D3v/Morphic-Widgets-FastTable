@@ -1,6 +1,6 @@
 initialization
 initialize
 	super initialize.
-	self isColumnOrderedFromGreatest: false.
-	self isColumnOrderedFromLeast: false.
-	self inform: 'init'
+	self isColumnOrderedFromLeast:false. 
+	self isColumnOrderedFromGreatest:true. 
+	self inform: 'init'.

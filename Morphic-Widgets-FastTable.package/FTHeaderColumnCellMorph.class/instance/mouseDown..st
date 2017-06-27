@@ -1,7 +1,7 @@
 event handling
 mouseDown: event
 	"perform the click"
-	"#todo for now this event will send an order message to the datasource (Simple data source type only) the data source sub classes should have better design to pass the order message to all the child classes"
+	"#todo for now this event will send an order message to the datasource (Simple data source type only) the data source sub classes should have better design to pass the order message to all the child classes"	 
 	(self isColumnOrderedFromLeast not and:self isColumnOrderedFromGreatest not) ifTrue:[ self table dataSource sortElements:[:a :c | a property1 > c property1 ].	
 			self isColumnOrderedFromLeast:false. 
 		self isColumnOrderedFromGreatest:true. 
