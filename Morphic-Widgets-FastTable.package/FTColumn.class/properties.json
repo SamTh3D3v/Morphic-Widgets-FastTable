@@ -7,7 +7,9 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"id",
-		"width"
+		"width",
+		"isColumnOrderedFromLeast",
+		"isColumnOrderedFromGreatest"
 	],
 	"name" : "FTColumn",
 	"type" : "normal"
