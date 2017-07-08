@@ -3,7 +3,7 @@ addCellEditingEvents:index
 "View a floatting editor to edit the content of a cell (index)"
 |textEditor cellMorph|
 cellMorph := ds table visibleCellMorphAtIndex: index.	
-cellMorph hasEditingProvider ifTrue: [ ^self ].
+cellMorph hasEditingProvider ifTrue: [ cellMorph showEditor.  ^self ].
 cellMorph allowEdit ifFalse: [ ^self ].
 	textEditor := RubFloatingEditorBuilder new
 					customizeEditorWith: [ :editor | 
