@@ -10,7 +10,8 @@
 		"property2",
 		"property3",
 		"property4",
-		"property5"
+		"property5",
+		"property6"
 	],
 	"name" : "FTCellSampleClassModel",
 	"type" : "normal"
