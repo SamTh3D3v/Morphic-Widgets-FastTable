@@ -1,4 +1,4 @@
 api
 edit
-"Edit selected cell/row."
+"Edit a selected cell/row."
 	^$e meta 

@@ -1,6 +1,7 @@
 initialization
 initializeKeyBindings
 	"add keybindings used by table"
+
 	self 
 		bindKeyCombination: Character arrowUp shift | Character arrowUp asKeyCombination
 		toAction: [ :target :morph :event | self keyStrokeArrowUp: event ].
@@ -28,3 +29,8 @@ initializeKeyBindings
 		toAction: [ selectionMode==#row
 			ifTrue:[self selectAllRowIndexes]
 			ifFalse:[self selectAllCells ]].
+	self 
+		bindKeyCombination:  PlatformSpecificKeyCombination  edit     "editing works only on cell selection mode"
+		toAction: [ :target :morph :event |self keyStrokeEdit: event ].
+		
+	
