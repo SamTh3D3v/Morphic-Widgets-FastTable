@@ -1,3 +1,3 @@
 accessing
 selectedIndex
-	^index  
+	^selectedIndex  

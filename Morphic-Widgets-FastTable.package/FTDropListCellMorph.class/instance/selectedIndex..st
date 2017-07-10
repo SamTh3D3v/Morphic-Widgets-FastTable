@@ -1,5 +1,5 @@
 accessing
 selectedIndex: anIndex
 "   allowEdit ifFalse: [^self]."
-	index := anIndex.
+	selectedIndex := anIndex.
 	self changed: #selectedIndex

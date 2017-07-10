@@ -4,11 +4,12 @@ keyStrokeEdit: event
 handled when setting up the table "		
 	| index|
 	selectionMode == #row
-	ifTrue:[index := self container rowIndexContainingPoint: event cursorPoint.
+	ifTrue:[index := self selectedRowIndex  .
 	index ifNotNil: [ 
 		self doAnnounce: (FTStrongSelectionChanged rowIndex: index event: event) ]]
-	ifFalse:[index := self container rowAndColumnIndexContainingPoint: event cursorPoint.
-	index ifNotNil: [ 
-		self doAnnounce: (FTCellStrongSelectionChanged cellIndex: index event: event) ]].
+	ifFalse:[index := self selectedCellsIndex .
+	index ifNotNil:  [ 
+		index first ifNotNil: [  
+		self doAnnounce: (FTCellStrongSelectionChanged cellIndex: index event: event) ]]].
 				
 				

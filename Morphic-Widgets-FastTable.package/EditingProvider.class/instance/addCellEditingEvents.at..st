@@ -2,6 +2,7 @@ adding
 addCellEditingEvents: aCellMorph at:index
 "View a floatting editor to edit the content of a cell"
 |textEditor|
+
 aCellMorph allowEdit ifFalse: [ ^self ].
 	textEditor := RubFloatingEditorBuilder new
 					customizeEditorWith: [ :editor | 

@@ -1,0 +1,3 @@
+operations
+showEditor:index
+	^self

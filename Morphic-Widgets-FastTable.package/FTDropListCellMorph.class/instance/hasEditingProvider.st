@@ -1,4 +1,4 @@
 testing
 hasEditingProvider
-"the drop list cell morph dosen't need an editing provider"
+"the date cell morph  has its own editing provider that shows the calender morph"
 	^true
