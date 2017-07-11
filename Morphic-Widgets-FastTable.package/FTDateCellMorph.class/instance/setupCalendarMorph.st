@@ -5,5 +5,6 @@ setupCalendarMorph
 	cal :=  (CalendarMorph on: Date today).
 	cal extent: 200 @ 160.
 	cal position: 20 @ 20.
-	self calendar: cal 
+	self calendar: cal
+	
 	
