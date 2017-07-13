@@ -1,0 +1,1 @@
+I am a custom checkbox widget used inside the fast table, basiclly i don't have a label and i provide the posibility to adjast the clickable button inside.
