@@ -1,0 +1,2 @@
+accessing
+allowEdit: aBoolean

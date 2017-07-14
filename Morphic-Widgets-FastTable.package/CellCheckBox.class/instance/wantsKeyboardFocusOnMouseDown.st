@@ -1,0 +1,3 @@
+focus handling
+wantsKeyboardFocusOnMouseDown
+	^false

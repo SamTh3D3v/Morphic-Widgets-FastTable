@@ -5,7 +5,7 @@ initialize
 	super initialize.
 	
 	self
-		borderWidth: 0; "space for focus"
+		borderWidth: 0; 
 		borderColor: Color transparent;
 		enabled: true;
 		changeTableLayout;
