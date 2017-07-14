@@ -1,4 +1,4 @@
 accessing
 allowEdit: aBool
 	allowEdit := aBool.
-	dropList notNil ifTrue:[ self dropList enabled: aBool]
+	self dropList notNil ifTrue:[ self dropList lock: aBool not]

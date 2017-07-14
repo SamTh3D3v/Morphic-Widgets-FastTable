@@ -1,6 +1,6 @@
 accessing
 prop5Column: column row: rowIndex
-	^ FTDropListCellMorph table:table datasource: #('one' 'two' 'three' 'four' 'five') selectedItem:((self elementAt: rowIndex) property5 ) allowEdit: true
+	^ FTDropListCellMorph table:table datasource: #('one' 'two' 'three' 'four' 'five') selectedItem:((self elementAt: rowIndex) property5 ) allowEdit: false
 	
 	"^ FTCellMorph new
 		color: (Color transparent);
