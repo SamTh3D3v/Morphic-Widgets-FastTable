@@ -1,0 +1,1 @@
+I am a custom calendar widget used inside the fast table, basiclly i handle some extra keyborad shortcuts.

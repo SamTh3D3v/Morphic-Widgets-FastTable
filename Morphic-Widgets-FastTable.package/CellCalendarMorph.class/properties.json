@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "ElhamerOussama 7/15/2017 01:45",
+	"super" : "CalendarMorph",
+	"category" : "Morphic-Widgets-FastTable",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "CellCalendarMorph",
+	"type" : "normal"
+}
