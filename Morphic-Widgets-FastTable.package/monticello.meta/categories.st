@@ -1,5 +1,6 @@
 SystemOrganization addCategory: #'Morphic-Widgets-FastTable'!
 SystemOrganization addCategory: 'Morphic-Widgets-FastTable-Announcement'!
+SystemOrganization addCategory: 'Morphic-Widgets-FastTable-Custom-Widgets'!
 SystemOrganization addCategory: 'Morphic-Widgets-FastTable-DataSource'!
 SystemOrganization addCategory: 'Morphic-Widgets-FastTable-Easy'!
 SystemOrganization addCategory: 'Morphic-Widgets-FastTable-Examples'!

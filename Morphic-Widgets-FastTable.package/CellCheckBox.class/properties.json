@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "ElhamerOussama 7/13/2017 17:04",
 	"super" : "CheckboxMorph",
-	"category" : "Morphic-Widgets-FastTable",
+	"category" : "Morphic-Widgets-FastTable-Custom-Widgets",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
