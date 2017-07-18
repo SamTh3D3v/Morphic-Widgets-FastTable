@@ -1,0 +1,1 @@
+I hold a linux distribution supported cpu Architectures.

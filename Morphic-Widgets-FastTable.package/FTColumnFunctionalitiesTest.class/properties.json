@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "ElhamerOussama 7/15/2017 14:13",
+	"super" : "TestCase",
+	"category" : "Morphic-Widgets-FastTable-Tests",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"table"
+	],
+	"name" : "FTColumnFunctionalitiesTest",
+	"type" : "normal"
+}

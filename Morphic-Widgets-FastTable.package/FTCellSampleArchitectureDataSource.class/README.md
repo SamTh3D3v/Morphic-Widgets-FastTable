@@ -1,0 +1,1 @@
+I am a sample datasource class for the architecture checkboxes fast table.

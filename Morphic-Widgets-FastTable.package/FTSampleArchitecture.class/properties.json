@@ -1,0 +1,21 @@
+{
+	"commentStamp" : "ElhamerOussama 7/18/2017 03:37",
+	"super" : "Object",
+	"category" : "Morphic-Widgets-FastTable-Examples",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"Distribution",
+		"x86",
+		"x8664",
+		"ia64",
+		"ppc",
+		"ppc64",
+		"sparc32",
+		"sparc64",
+		"arm"
+	],
+	"name" : "FTSampleArchitecture",
+	"type" : "normal"
+}
