@@ -1,3 +1,3 @@
 accessing
-Distribution: aString
-	Distribution := aString
+distribution: aString
+	distribution := aString

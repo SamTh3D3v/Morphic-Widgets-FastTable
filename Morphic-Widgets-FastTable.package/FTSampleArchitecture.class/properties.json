@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"Distribution",
+		"distribution",
 		"x86",
 		"x8664",
 		"ia64",

@@ -1,5 +1,5 @@
 instance creation
-new: anInteger
+new
 	^self basicNew 
 	initializeDataSource;
 	yourself 
