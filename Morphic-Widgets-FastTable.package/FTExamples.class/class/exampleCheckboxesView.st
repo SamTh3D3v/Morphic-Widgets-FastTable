@@ -20,11 +20,7 @@ table := FTTableMorph new
 		selectRowIndex: 1;
 		showFirstRowSelection;	
 		beSingleSelection;		
-		onAnnouncement: FTCellStrongSelectionChanged 
-			do: [ :ann | |index ep|
-				index := ann selectedCellIndex.	
-				ep := EditingProvider dateSource:ds. ep addCellEditingEvents:index.
-		];
+		
 	   allowDeselection;
 		yourself.
 		table openInWindow.
