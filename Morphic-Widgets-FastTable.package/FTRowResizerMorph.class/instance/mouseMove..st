@@ -7,4 +7,4 @@ mouseMove: anEvent
 		traceMorph color: Smalltalk ui theme fastTableColumnResizingColor.
 		"traceMorph borderWidth: 0."
 		container addMorph: traceMorph].
-	traceMorph position: (anEvent cursorPoint x - lastMouse second x) @ traceMorph position y.
+	traceMorph position: (traceMorph position x) @ (anEvent cursorPoint y - lastMouse second y).

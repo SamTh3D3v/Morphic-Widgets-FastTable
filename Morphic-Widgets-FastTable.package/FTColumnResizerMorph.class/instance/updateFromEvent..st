@@ -4,7 +4,6 @@ updateFromEvent: anEvent
 	the mouse event.
 	Take into account the mouse down offset."
 	| delta |
-	
 	delta := (anEvent cursorPoint - lastMouse first) x.
 	"if positive, delta cannot be bigger than right width (plus a variation) 
 	 to prevent column overlap."

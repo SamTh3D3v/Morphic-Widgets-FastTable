@@ -9,4 +9,5 @@ mouseDown: anEvent
 		ifTrue: [oldColor := self color.
 			self setGrabbedColor].
 	cp := anEvent cursorPoint.
-	lastMouse := {cp. cp - self position}
+	lastMouse := {cp. cp - self position}.
+	self inform: lastMouse asString .
