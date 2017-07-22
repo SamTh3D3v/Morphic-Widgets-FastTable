@@ -24,6 +24,7 @@
 		"needToggleAtMouseUp",
 		"function",
 		"resizable",
+		"resizableRows",
 		"selectionMode",
 		"selectedCellsIndexes"
 	],

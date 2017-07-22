@@ -1,0 +1,3 @@
+accessing
+beNotResizableRows
+	resizableRows  := false
