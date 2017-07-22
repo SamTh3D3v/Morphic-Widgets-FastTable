@@ -1,15 +1,15 @@
 drawing
 addResizeRowSplitters
-	"| columnWidths nextColumn delta |
-	columnWidths := self calculateColumnWidths.
-	nextColumn := self left.
-	delta := FTColumnResizerMorph resizerWidth / 2.
-	self owner columns overlappingPairsWithIndexDo:  [ :leftColumn :rightColumn :index |
-		nextColumn := nextColumn + (columnWidths at: index) + self owner intercellSpacing x.
-		self addMorph: ((FTColumnResizerMorph 
+	| rowHeight nextRow delta |
+	rowHeight := self owner rowHeight rounded.  "need to get a collection of the updated highs"
+	nextRow := self top.
+	delta := FTRowResizerMorph  resizerHeight  / 2.
+	self  exposedRows values overlappingPairsWithIndexDo:  [ :topRow :bottomRow :index |
+		nextRow := nextRow + rowHeight+ self owner intercellSpacing y.
+		self addMorph: ((FTRowResizerMorph 
 			container: self 
-				left: (FTDisplayColumn column: leftColumn width: (columnWidths at: index))
-				right: (FTDisplayColumn column: rightColumn width: (columnWidths at: (index + 1))))
-			bounds: ((nextColumn - delta)@(self top) extent: delta@(self height));
-			color: Color transparent;
-			yourself)	 ]"
+				top:  (topRow)
+				bottom: (bottomRow))
+			bounds: ((self left)@(nextRow - delta ) extent: (self width)@(delta));
+			color: Color yellow ;
+			yourself)	 ]

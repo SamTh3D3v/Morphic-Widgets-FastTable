@@ -11,5 +11,5 @@ addResizeSplitters
 				left: (FTDisplayColumn column: leftColumn width: (columnWidths at: index))
 				right: (FTDisplayColumn column: rightColumn width: (columnWidths at: (index + 1))))
 			bounds: ((nextColumn - delta)@(self top) extent: delta@(self height));
-			color: Color transparent;
+			color: Color red;
 			yourself)	 ]
