@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "AbstractResizerMorph",
+	"category" : "Morphic-Widgets-FastTable",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"container",
+		"topRow",
+		"bottomRow",
+		"oldColor",
+		"traceMorph"
+	],
+	"name" : "FTRowResizerMorph",
+	"type" : "normal"
+}

@@ -1,3 +1,3 @@
 actions
 resizeCursor
-	^ Cursor resizeForEdge: #left
+	^ Cursor resizeForEdge: #left 

@@ -10,6 +10,7 @@ initialize
 	needToggleAtMouseUp := false.
 	selectionMode := self class defaultSelectionMode.
 	self beNotResizable.
+	self beNotResizableRows.
 	self beSingleSelection.
 	self enableSearch.
 	self initializeScrollBars.

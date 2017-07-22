@@ -54,6 +54,8 @@ drawOn: canvas
 	
 	owner isResizable 
 		ifTrue: [ self addResizeSplitters ].
+	owner isRowResizable  
+		ifTrue: [ self addResizeRowSplitters].
 	
 
 	needsRefreshExposedRows := false

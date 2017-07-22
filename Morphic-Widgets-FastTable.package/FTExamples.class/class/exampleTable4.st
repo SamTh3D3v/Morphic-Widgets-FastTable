@@ -12,6 +12,7 @@ exampleTable4
 		addColumn: (FTColumn id: 'Origin');
 		hideColumnHeaders;
 		beResizable;
+		beResizableRows;
 		intercellSpacing: 8@1;
 		dataSource: (FTExampleMethodTableDataSource for: Morph);
 		selectRowIndex: 1;

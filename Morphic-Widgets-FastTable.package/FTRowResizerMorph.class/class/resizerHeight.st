@@ -1,0 +1,3 @@
+accesing
+resizerHeight
+	^ 8
