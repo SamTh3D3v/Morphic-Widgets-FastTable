@@ -6,8 +6,8 @@ mouseUp: anEvent
 	(self bounds containsPoint: anEvent cursorPoint)
 		ifFalse: [anEvent hand showTemporaryCursor: nil].
 	self container owner allowNonUniformRowsHeights
-	ifTrue: [ self updateFromEventUniformly: anEvent.]
-	ifFalse:[self updateFromEvent: anEvent.].
+	ifFalse: [ self updateFromEventUniformly: anEvent.]
+	ifTrue:[self updateFromEvent: anEvent.].
 	
 	traceMorph ifNotNil: [traceMorph delete. traceMorph := nil].
 	self adoptPaneColor: self paneColor.

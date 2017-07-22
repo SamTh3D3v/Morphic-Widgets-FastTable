@@ -1,6 +1,6 @@
 examples
-exampleTable4
-	"Show a table with all Object methods, with a resizable header"
+exampleTable8
+	"Show a table with all Object methods, with a resizable rows"
 	<example>
 	| table |
 
@@ -13,7 +13,6 @@ exampleTable4
 		hideColumnHeaders;
 		beResizable;
 		beResizableRows;
-				enableNonUniformRowsHeights;
 		intercellSpacing: 8@1;
 		dataSource: (FTExampleMethodTableDataSource for: Morph);
 		selectRowIndex: 1;

@@ -1,3 +1,4 @@
 accessing
 beResizableRows
-	resizableRows := true
+	resizableRows := true.
+	self allowNonUniformRowsHeights: self class defaultRowsHeightsUniform
