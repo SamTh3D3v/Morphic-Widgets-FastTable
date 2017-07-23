@@ -1,17 +1,9 @@
 event handling
 updateFromEventUniformly: anEvent 
-	"Update the splitter and attached morph positions from
-	the mouse event.
-      and keep all the rows at the same heigh"
+
 	| delta |
-		self inform: ' unif'.
 	delta := (anEvent cursorPoint - lastMouse first) y.
-	"if positive, delta cannot be bigger than right width (plus a variation) 
-	 to prevent column overlap."
-	(delta > 0 and: [ delta > (container owner rowHeight - (self height ) - 5) ])
-		ifTrue: [ delta := container owner rowHeight - (self height) - 5 ].
-	"if negative, -delta cannot be bigger than left width (plus a variation) 
-	 to prevent column overlap."
+	"when the delta is nagative we need to make sure to not collaps rows"
 	(delta < 0 and: [ delta negated > (container owner rowHeight  - (self height) - 5) ])
 		ifTrue: [ delta := (container owner rowHeight - (self height) - 5) negated ].
 
