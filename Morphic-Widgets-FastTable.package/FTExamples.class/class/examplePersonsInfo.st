@@ -13,8 +13,7 @@ table := FTTableMorph new
 		dataSource: ds;
 		selectRowIndex: 1;
 		showFirstRowSelection;	
-		beSingleSelection;				
-	      allowDeselection;
+		beSingleSelection;					    
 	     onAnnouncement: FTCellStrongSelectionChanged 
 			do: [ :ann | |index ep|
 				index := ann selectedCellIndex.	
