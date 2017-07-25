@@ -11,5 +11,5 @@ addResizeRowSplitters
 				top:  (topRow)
 				bottom: (bottomRow))
 			bounds: ((self left)@(nextRow - delta ) extent: (self width)@(delta));
-			color: Color yellow ;
+			color: Color transparent ;
 			yourself)	 ]
