@@ -1,0 +1,1 @@
+I announce a cell data change, when the content of a cell get updated i propagate the event to the data source, i could be handled when creating the table as well.

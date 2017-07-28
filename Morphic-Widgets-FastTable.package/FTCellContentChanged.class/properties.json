@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "ElhamerOussama 7/28/2017 02:27",
+	"super" : "FTAnnouncement",
+	"category" : "Morphic-Widgets-FastTable-Announcement",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"oldCellContent",
+		"newCellContent"
+	],
+	"name" : "FTCellContentChanged",
+	"type" : "normal"
+}
