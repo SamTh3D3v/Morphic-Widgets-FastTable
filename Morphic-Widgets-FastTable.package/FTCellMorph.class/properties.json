@@ -9,7 +9,8 @@
 		"topSeparator",
 		"columnSelectionColor",
 		"table",
-		"allowEdit"
+		"allowEdit",
+		"cellPosition"
 	],
 	"name" : "FTCellMorph",
 	"type" : "normal"
