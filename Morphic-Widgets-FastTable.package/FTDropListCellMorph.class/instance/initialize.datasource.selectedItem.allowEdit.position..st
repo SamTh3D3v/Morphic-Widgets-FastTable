@@ -5,8 +5,8 @@ initialize:aTable datasource: aList selectedItem:anObject allowEdit: aBoolean  p
 super initialize.
 	self table: aTable.
 	self itemSource: aList.
-	self selectedItem: anObject. "We need to make sure that the object is part of the list"
 	self cellPosition: aPosition.
+	self selectedItem: anObject. "We need to make sure that the object is part of the list"
    "self selectedIndex: 1."
 	self setupDropList.
 	self allowEdit: aBoolean.

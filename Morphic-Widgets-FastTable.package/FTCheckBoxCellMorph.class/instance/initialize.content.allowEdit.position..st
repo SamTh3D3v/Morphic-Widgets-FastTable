@@ -3,8 +3,8 @@ initialize: aTable content: aBooleanContent allowEdit: aBoolean  position: aPosi
 
 	super initialize.
 	self table: aTable.
+	self cellPosition: aPosition.
 	self content: aBooleanContent.
 	self setupCheckBox.
 	self allowEdit: aBoolean.
-	self cellPosition: aPosition.
 	self addMorphBack:checkbox.

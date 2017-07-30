@@ -4,6 +4,6 @@ initialize:aTable content: aString allowEdit: aBoolean  position: aPosition
 	super initialize.
 	self table: aTable.
 	self allowEdit: aBoolean.
-	self content: aString.
 	self cellPosition: aPosition.
+	self content: aString.
 	self addMorphBack: content asStringMorph.
