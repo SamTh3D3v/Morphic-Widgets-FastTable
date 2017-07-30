@@ -4,6 +4,6 @@ date: aDate
 	oldValue :=((self table dataSource elements at: self cellPosition  second) perform:  self cellPosition first property).
 	date := aDate.
 	newValue := aDate.
-	newValue = oldValue ifFalse:  [ self doAnnounce:((FTCellContentChanged  from: oldValue  to: newValue)
+	newValue = oldValue ifFalse:  [ self table doAnnounce:((FTCellContentChanged  from: oldValue  to: newValue)
 				fastTable: self table;
 				yourself).  ].

@@ -20,6 +20,8 @@ table1 := FTTableMorph new
 		beMultipleSelection;
 		onAnnouncement: FTSelectionChanged 
 			do: [ :ann | ('rows selected: ', (ann newSelectedRowIndexes asString)) crLog ];
+		onAnnouncement: FTCellContentChanged  
+			do: [ :ann | self inform: 'Yes' ];
 		onAnnouncement: FTCellStrongSelectionChanged 
 			do: [ :ann | |index ep|
 				index := ann selectedCellIndex.	
@@ -40,8 +42,10 @@ table2 := FTTableMorph new
 		selectRowIndex: 1;
 		showFirstRowSelection;	
 		beMultipleSelection;
+		onAnnouncement: FTCellContentChanged  
+			do: [ :ann | self inform: 'Yes' ];
 		onAnnouncement: FTSelectionChanged 
-			do: [ :ann | ('rows selected: ', (ann newSelectedRowIndexes asString)) crLog ];
+			do: [ :ann | ('rows selected: ', (ann newSelectedRowIndexes asString)) crLog ];		
 		onAnnouncement: FTCellStrongSelectionChanged 
 			do: [ :ann | |index ep|
 				index := ann selectedCellIndex.	
