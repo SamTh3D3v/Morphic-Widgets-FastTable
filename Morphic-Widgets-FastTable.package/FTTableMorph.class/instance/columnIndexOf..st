@@ -1,3 +1,4 @@
 operations
 columnIndexOf: aColumnId
-	"^ self columns id indexOf: aColumnId"
+	"return the index of a given column Id"
+	^ self columnIds  indexOf: aColumnId
