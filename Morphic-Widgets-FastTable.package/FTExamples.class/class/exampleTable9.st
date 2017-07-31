@@ -66,3 +66,4 @@ pane color: Color red.
 pane addMorph: table1.
 pane addMorph: table2.
 pane openInWindow .
+self inform: table1 columnIds.

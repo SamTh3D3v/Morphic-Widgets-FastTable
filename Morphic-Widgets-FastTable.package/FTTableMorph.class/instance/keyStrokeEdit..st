@@ -1,4 +1,4 @@
-as yet unclassified
+operations
 keyStrokeEdit: event
 "the keystoke edit is triggered by Ctrl+e, and it simply fires the StrongSelection Announcement, the announcement should be
 handled when setting up the table "		
