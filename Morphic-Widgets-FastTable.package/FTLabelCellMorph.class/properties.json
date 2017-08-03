@@ -8,6 +8,6 @@
 	"instvars" : [
 		"content"
 	],
-	"name" : "FTTextEditCellMorph",
+	"name" : "FTLabelCellMorph",
 	"type" : "normal"
 }
