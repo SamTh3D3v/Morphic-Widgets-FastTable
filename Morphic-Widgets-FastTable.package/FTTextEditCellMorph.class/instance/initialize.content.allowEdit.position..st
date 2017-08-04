@@ -5,6 +5,6 @@ initialize:aTable content: aString allowEdit: aBoolean  position: aPosition
 	self table: aTable.
 	self allowEdit: aBoolean.
 	self cellPosition: aPosition.
-	self content: aString.
 	self setupRubTextFieldArea.
+	self content: aString.
 	self addMorphBack: self rubTextField.

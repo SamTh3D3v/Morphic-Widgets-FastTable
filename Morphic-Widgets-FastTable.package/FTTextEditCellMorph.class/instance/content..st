@@ -7,5 +7,5 @@ content: aString
 	newValue = oldValue ifFalse:  [ self table doAnnounce:((FTCellContentChanged  from: oldValue  to: newValue)
 				fastTable: self table;
 				yourself).  ].
-	self rubTextField setTextWith: aString.
+	self rubTextField ifNotNil:[rubTextField setTextWith: aString].
 	self updateDataSource.
