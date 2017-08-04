@@ -7,7 +7,6 @@ super initialize.
 	self itemSource: aList.
 	self cellPosition: aPosition.
 	self selectedItem: anObject. "We need to make sure that the object is part of the list"
-   "self selectedIndex: 1."
 	self setupDropList.
 	self allowEdit: aBoolean.
 	self addMorphBack:dropList.

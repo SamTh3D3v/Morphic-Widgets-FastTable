@@ -14,7 +14,7 @@ selectedItem: anItem
 				fastTable: self table;
 				yourself).  ].	
 				
-     self 	updateDataSource	.
+     self updateDataSource.
 		
 
    
