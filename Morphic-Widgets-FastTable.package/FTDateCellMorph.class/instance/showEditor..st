@@ -4,7 +4,7 @@ showEditor:index
 	self allowEdit ifFalse: [ ^self ].
 	cal :=  (CellCalendarMorph on: (self date ifNil: [Date today] ifNotNil: [self date])).
 	self cellIndex: index.
-	cal position: (self bounds topLeft +  (10@10) ) . "#todo: update the 10@10 point with an apropriete coordinate"
+	cal position: (self bounds topLeft +  (10@10)). 
 	self calendar: cal.
 	cal takeKeyboardFocus.
 	cal openInWorld.
