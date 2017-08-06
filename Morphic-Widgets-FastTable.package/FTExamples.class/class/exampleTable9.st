@@ -54,10 +54,10 @@ table2 := FTTableMorph new
 	 layoutInset: 10;
 		yourself.
 pane := Morph new.
-pane layoutPolicy: TableLayout new. "lay out contents as a table"
-pane listDirection: #leftToRight. "how we want to place the contents"
-pane listCentering: #center. "start list at the top"
-pane wrapCentering: #center. "each item is in the center"
+pane layoutPolicy: TableLayout new. 
+pane listDirection: #leftToRight. 
+pane listCentering: #center. 
+pane wrapCentering: #center. 
 pane hResizing: #spaceFill.
 pane layoutInset: 10@10. 
 pane cellInset:10@10.
