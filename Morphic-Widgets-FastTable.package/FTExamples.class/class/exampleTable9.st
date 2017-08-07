@@ -21,7 +21,7 @@ table1 := FTTableMorph new
 		onAnnouncement: FTSelectionChanged 
 			do: [ :ann | ('rows selected: ', (ann newSelectedRowIndexes asString)) crLog ];
 		onAnnouncement: FTCellContentChanged  
-			do: [ :ann | self inform: 'Yes' ];
+			do: [ :ann | self inform: 'Old: ',ann oldCellContent,' New:',ann newCellContent ];
 		onAnnouncement: FTCellStrongSelectionChanged 
 			do: [ :ann | |index ep|
 				index := ann selectedCellIndex.	
@@ -43,7 +43,7 @@ table2 := FTTableMorph new
 		showFirstRowSelection;	
 		beMultipleSelection;
 		onAnnouncement: FTCellContentChanged  
-			do: [ :ann | self inform: 'Yes' ];
+			do: [ :ann | self inform: 'Old: ',ann oldCellContent asString ,' New:',ann newCellContent asString ];
 		onAnnouncement: FTSelectionChanged 
 			do: [ :ann | ('rows selected: ', (ann newSelectedRowIndexes asString)) crLog ];		
 		onAnnouncement: FTCellStrongSelectionChanged 
