@@ -17,16 +17,7 @@ table1 := FTTableMorph new
 		dataSource: ds;
 		selectRowIndex: 1;
 		showFirstRowSelection;	
-		beMultipleSelection;
-		onAnnouncement: FTSelectionChanged 
-			do: [ :ann | ('rows selected: ', (ann newSelectedRowIndexes asString)) crLog ];
-		onAnnouncement: FTCellContentChanged  
-			do: [ :ann | self inform: 'Old: ',ann oldCellContent,' New:',ann newCellContent ];
-		onAnnouncement: FTCellStrongSelectionChanged 
-			do: [ :ann | |index ep|
-				index := ann selectedCellIndex.	
-				ep := EditingProvider dateSource:ds. ep addCellEditingEvents:index.
-		];
+		beMultipleSelection;		
 	   allowDeselection;
 		yourself.
 table2 := FTTableMorph new
@@ -41,16 +32,7 @@ table2 := FTTableMorph new
 		dataSource: ds;
 		selectRowIndex: 1;
 		showFirstRowSelection;	
-		beMultipleSelection;
-		onAnnouncement: FTCellContentChanged  
-			do: [ :ann | self inform: 'Old: ',ann oldCellContent asString ,' New:',ann newCellContent asString ];
-		onAnnouncement: FTSelectionChanged 
-			do: [ :ann | ('rows selected: ', (ann newSelectedRowIndexes asString)) crLog ];		
-		onAnnouncement: FTCellStrongSelectionChanged 
-			do: [ :ann | |index ep|
-				index := ann selectedCellIndex.	
-				ep := EditingProvider dateSource:ds. ep addCellEditingEvents:index.
-		];
+		beMultipleSelection;		
 	 layoutInset: 10;
 		yourself.
 pane := Morph new.
