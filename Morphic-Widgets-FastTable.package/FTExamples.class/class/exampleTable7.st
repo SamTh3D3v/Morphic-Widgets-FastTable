@@ -15,6 +15,7 @@ table := FTTableMorph new
 		addColumn: (FTColumn id: 'column6');	
 		dataSource: ds;
 		selectRowIndex: 1;
+		mouseMoveSelection:true;
 		showFirstRowSelection;	
 		beMultipleSelection;
 		onAnnouncement: FTSelectionChanged 

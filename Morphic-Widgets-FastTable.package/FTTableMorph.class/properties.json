@@ -27,7 +27,8 @@
 		"resizableRows",
 		"allowNonUniformRowsHeights",
 		"selectionMode",
-		"selectedCellsIndexes"
+		"selectedCellsIndexes",
+		"mouseMoveSelection"
 	],
 	"name" : "FTTableMorph",
 	"type" : "normal"
