@@ -4,7 +4,7 @@ mouseMove: event
 "selection manupuLation"
 self mouseMoveSelection ifTrue: [  "select cell when the mouseDown moves"
 	
-	self selectionMode ==#row
+	self isRowSelectionMode
 	ifTrue:[
 	rowI := self container rowIndexContainingPoint: event cursorPoint.
 	rowI isNil ifTrue:[^ self ].
@@ -18,8 +18,7 @@ self mouseMoveSelection ifTrue: [  "select cell when the mouseDown moves"
 			(self selectedCellsIndexes includes: cellI)
 		ifFalse: [self inform: cellI asString .self selectionStrategy selectCellIndex: cellI event: event.]
 		ifTrue: [ needToggleAtMouseUp := true ].
-			].
-	
+			].	
 	 ].
 
 "Draging event manupulations"
