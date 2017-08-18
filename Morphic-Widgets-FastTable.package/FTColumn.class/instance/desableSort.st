@@ -1,4 +1,4 @@
 testing
 desableSort
-	self isColumnOrderedFromGreatest:false.
-	self isColumnOrderedFromLeast: false.
+	 isColumnOrderedFromGreatest:=false.
+	 isColumnOrderedFromLeast:= false.
