@@ -1,3 +1,3 @@
 accessing
 allowSort: aBool
-	allowSort := aBool
+	self column isColumnOrderedFromGreatest: aBool

@@ -5,5 +5,5 @@ headerColumn: column
 		listCentering: #center;
 		column: column;
 		table:self table;
-		addMorph: column id asMorph;
+		addMorph: (self getCellMorphContent:column);
 		yourself
