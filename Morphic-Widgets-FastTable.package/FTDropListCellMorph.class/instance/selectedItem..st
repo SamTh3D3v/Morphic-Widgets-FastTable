@@ -7,7 +7,7 @@ selectedItem: anItem
 	index := itemSource indexOf: anItem ifAbsent: [0].
 	(index > 0) ifTrue:[selectedIndex := index.] ifFalse:[^self "i should raise an exception here" ]].
 
-      oldValue :=((self table dataSource elements at: self cellPosition  second) perform:  self cellPosition first property).
+	cellPosition ifNotNil: [oldValue :=((self table dataSource elements at: self cellPosition  second) perform:  self cellPosition first property).] ifNil: [ oldValue :=nil ].
 	newValue := anItem.
 	selectedItem := anItem.
 	newValue = oldValue ifFalse:  [ self table doAnnounce:((FTCellContentChanged  from: oldValue  to: newValue)

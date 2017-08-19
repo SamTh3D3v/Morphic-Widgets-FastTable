@@ -10,7 +10,7 @@ exampleTable8
 		addColumn: ((FTColumn id: 'Name') width: 350);
 		addColumn: (FTColumn id: 'Protocol');
 		addColumn: (FTColumn id: 'Origin');
-		hideColumnHeaders;
+		beRowSelectionMode;
 		beResizable;
 		beResizableRows;
 		intercellSpacing: 8@1;
