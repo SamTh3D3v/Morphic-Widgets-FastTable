@@ -29,8 +29,11 @@ The improvements are highlighted bellow and a link to a demo video is also provi
 * Build a data sheet widget, to create sheet objects easily. The widget is based on fast tables and on the FTTextEditCellMorph 
 with some advanced functionalities.
 The spreadsheet has its own repository: https://github.com/SamTheDev/PharoSpreadSheet
-* Migritte implementation to nicely map domain objects to cells.
+* Migritte implementation to map domain objects to cells.
 * Improve FasteTrees; 
-  
+
 ## Demo video
 * The following video illustrates some of the implemented functionalities: https://vimeo.com/230297933
+
+## Installation 
+* To use this package, you can either load it from GitHub using [IceBerg](https://github.com/pharo-vcs/iceberg), or load it from the following smalltalkhub repository using Monticello: http://smalltalkhub.com/#!/~ElhamerOussama/FastTableOptimizations/
