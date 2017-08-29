@@ -1,18 +1,15 @@
 examples
 exampleTable8
-	"Show a table with all Object methods, with a resizable rows"
 	<example>
 	| table |
-
 	table := FTTableMorph new
 		extent: 650@500;
 		addColumn: ((FTColumn id: '#') width: 40);
 		addColumn: ((FTColumn id: 'Name') width: 350);
 		addColumn: (FTColumn id: 'Protocol');
 		addColumn: (FTColumn id: 'Origin');
-		beRowSelectionMode;
 		beResizable;
-		beResizableRows;
+
 		intercellSpacing: 8@1;
 		dataSource: (FTExampleMethodTableDataSource for: Morph);
 		selectRowIndex: 1;

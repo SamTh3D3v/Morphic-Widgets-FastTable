@@ -13,6 +13,8 @@ table := FTTableMorph new
 		addColumn: (FTColumn id: 'column4');
 		addColumn: (FTColumn id: 'column5');	
 		addColumn: (FTColumn id: 'column6');	
+	   beCellSelectionMode;
+		beResizableRows;
 		dataSource: ds;
 		selectRowIndex: 1;
 		mouseMoveSelection:true;

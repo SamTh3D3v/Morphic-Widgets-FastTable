@@ -7,4 +7,4 @@ content: aBool
 	newValue = oldValue ifFalse:  [self table doAnnounce:((FTCellContentChanged  from: oldValue  to: newValue)
 				fastTable: self table;
 				yourself).  ].
-     self 	updateDataSource	.
+     self 	updateDataSource.

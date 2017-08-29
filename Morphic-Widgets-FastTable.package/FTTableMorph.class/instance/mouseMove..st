@@ -16,7 +16,7 @@ self mouseMoveSelection ifTrue: [  "select cell when the mouseDown moves"
 			cellI := self container rowAndColumnIndexContainingPoint: event cursorPoint.
 		   cellI first isNil ifTrue:[^ self ].
 			(self selectedCellsIndexes includes: cellI)
-		ifFalse: [self inform: cellI asString .self selectionStrategy selectCellIndex: cellI event: event.]
+		ifFalse: [self selectionStrategy selectCellIndex: cellI event: event.]
 		ifTrue: [ needToggleAtMouseUp := true ].
 			].	
 	 ].
