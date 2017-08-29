@@ -36,4 +36,4 @@ The spreadsheet has its own repository: https://github.com/SamTheDev/PharoSpread
 * The following video illustrates some of the implemented functionalities: https://vimeo.com/230297933
 
 ## Installation 
-* To use this package, you can either load it from GitHub using [IceBerg](https://github.com/pharo-vcs/iceberg), or load it from the following smalltalkhub repository using Monticello: http://smalltalkhub.com/#!/~ElhamerOussama/FastTableOptimizations/
+* To use this package, you can either load the master branch using [IceBerg](https://github.com/pharo-vcs/iceberg), or load it from the following smalltalkhub repository using Monticello: http://smalltalkhub.com/#!/~ElhamerOussama/FastTableOptimizations/
