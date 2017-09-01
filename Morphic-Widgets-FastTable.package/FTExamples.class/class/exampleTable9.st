@@ -1,6 +1,7 @@
 examples
 exampleTable9
-"two tables with the same datasource"
+   
+   "two tables with the same datasource"
 	<example>
 	|pane table1 table2 ds|
 ds:=FTCellSampleDataSource new:10.
