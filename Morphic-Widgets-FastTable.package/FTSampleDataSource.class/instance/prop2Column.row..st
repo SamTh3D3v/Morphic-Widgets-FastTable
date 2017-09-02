@@ -1,7 +1,3 @@
 accessing
 prop2Column: column row: rowIndex
-	^ FTCellMorph new  
-		color: (Color transparent);
-		table: table;
-		addMorphBack: (self elementAt: rowIndex) property2 asStringMorph;
-		yourself
+	^ FTLabelCellMorph table: table content: ((self elementAt: rowIndex) property2 ) allowEdit: false position: (Array with:column with: rowIndex)
