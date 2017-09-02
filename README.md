@@ -24,7 +24,6 @@ table := FTTableMorph new.
 | table enableCellSelectionMode | enable cell selection mode.|
 | table enableRowSelectionMode | enable row selection mode.|
 | table SelectedCellsIndex | return the single selected cell.|
-| table SelectedCellsIndex | return the single selected cell.|
 | table selectedCellsIndexes | return a collection of selected cell indexes.|
 | table selectCellIndex: aPoint | select a single cell programmatically.|
 | table selectCellIndexes: anArray | select multiple cells is multiple selection mode is enabled.|
