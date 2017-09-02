@@ -13,6 +13,25 @@ The improvements are highlighted bellow and a link to a demo video is also provi
   - keyboard and mouse selection.
   - selection shortcuts.
   - multicell selection. 
+```
+|table|
+table := FTTableMorph new.
+"... table setup"
+```
+| Message | Description |
+| --- | --- |
+| table IsColumnSelectionMode | returns true if column selection mode is enabled. |
+| table enableCellSelectionMode | enable cell selection mode.|
+| table enableRowSelectionMode | enable row selection mode.|
+| table SelectedCellsIndex | return the single selected cell.|
+| table SelectedCellsIndex | return the single selected cell.|
+| table selectedCellsIndexes | return a collection of selected cell indexes.|
+| table selectCellIndex: aPoint | select a single cell programmatically.|
+| table selectCellIndexes: anArray | select multiple cells is multiple selection mode is enabled.|
+| table selectAllCells | select all table's cells.|
+| table deselectAllCells | deselect all cells.|
+| ... | ... |
+
   
 * Row height changing 
 
