@@ -1,19 +1,18 @@
 examples
 exampleTable7
-	"Show a table with cell selection mode, and a column with dates"
+	"Show a table with cell selection mode enabled, and different cell wodgets"
 	<example>
 	|table ds|
 ds:=FTCellSampleDataSource new:10.
 table := FTTableMorph new
 		extent: 500@500;
-		selectionMode: #column;
-		addColumn: (FTColumn id: 'column1');
-		addColumn: (FTColumn id: 'column2');
-		addColumn: (FTColumn id: 'column3');			
-		addColumn: (FTColumn id: 'column4');
-		addColumn: (FTColumn id: 'column5');	
-		addColumn: (FTColumn id: 'column6');	
-	   beCellSelectionMode;
+		enableRowSelectionMode;
+		addColumn: (FTColumn id: 'column1');    "editable FTLabelCellMorph"
+		addColumn: (FTColumn id: 'column2');    "non editable FTLabelCellMorph"
+		addColumn: (FTColumn id: 'column3');		"FTTextEditCellMorph"	
+		addColumn: (FTColumn id: 'column4');    "FTCheckBoxCellMorph"
+		addColumn: (FTColumn id: 'column5');	   "FTDropListCellMorph"
+		addColumn: (FTColumn id: 'column6');	   "FTDateCellMorph"
 		beResizableRows;
 		dataSource: ds;
 		selectRowIndex: 1;

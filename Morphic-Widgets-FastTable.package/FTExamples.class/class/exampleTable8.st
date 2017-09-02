@@ -4,6 +4,7 @@ exampleTable8
 	| table |
 	table := FTTableMorph new
 		extent: 650@500;
+		enableCellSelectionMode;
 		addColumn: ((FTColumn id: '#') width: 40);
 		addColumn: ((FTColumn id: 'Name') width: 350);
 		addColumn: (FTColumn id: 'Protocol');

@@ -2,13 +2,14 @@ examples
 exampleTable9
    
    "two tables with the same datasource"
+
 	<example>
 	|pane table1 table2 ds|
 ds:=FTCellSampleDataSource new:10.
 
 table1 := FTTableMorph new
 		extent: 500@500;
-		selectionMode: #column;
+		enableCellSelectionMode;
 		addColumn: (FTColumn id: 'column1');
 		addColumn: (FTColumn id: 'column2');
 		addColumn: (FTColumn id: 'column3');			
