@@ -4,6 +4,7 @@ testMultipleCellSelection
 	|columnsCount rowsCount rand cellsArray|
 	"enable cell's seletion mode and deselect all cells"
 	table enableCellSelectionMode.
+	table beMultipleSelection.
 	table deselectAllCells.
 	"select a single cell randomly"	
 	columnsCount := table columns size.
