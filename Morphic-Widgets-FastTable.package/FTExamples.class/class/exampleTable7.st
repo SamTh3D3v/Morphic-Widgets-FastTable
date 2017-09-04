@@ -2,11 +2,12 @@ examples
 exampleTable7
 	"Show a table with cell selection mode enabled, and different cell wodgets"
 	<example>
-	|table ds|
-ds:=FTCellSampleDataSource new:10.
-table := FTTableMorph new
+	|table sampleDataSource|
+	
+	sampleDataSource :=FTCellSampleDataSource new:10.
+	table := FTTableMorph new
 		extent: 500@500;
-		enableRowSelectionMode;
+		enableCellSelectionMode;
 		addColumn: (FTColumn id: 'column1');    "editable FTLabelCellMorph"
 		addColumn: (FTColumn id: 'column2');    "non editable FTLabelCellMorph"
 		addColumn: (FTColumn id: 'column3');		"FTTextEditCellMorph"	
@@ -14,7 +15,7 @@ table := FTTableMorph new
 		addColumn: (FTColumn id: 'column5');	   "FTDropListCellMorph"
 		addColumn: (FTColumn id: 'column6');	   "FTDateCellMorph"
 		beResizableRows;
-		dataSource: ds;
+		dataSource: sampleDataSource;
 		selectRowIndex: 1;
 		mouseMoveSelection:true;
 		showFirstRowSelection;	
@@ -24,7 +25,7 @@ table := FTTableMorph new
 		onAnnouncement: FTCellStrongSelectionChanged 
 			do: [ :ann | |index ep|
 				index := ann selectedCellIndex.	
-				ep := EditingProvider dateSource:ds. ep addCellEditingEvents:index.
+				ep := EditingProvider dateSource: sampleDataSource. ep addCellEditingEvents:index.
 		];
 	   allowDeselection;
 		yourself.
