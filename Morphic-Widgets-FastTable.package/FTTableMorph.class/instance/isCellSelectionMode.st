@@ -1,3 +1,3 @@
 testing
-isColumnSelectionMode
+isCellSelectionMode
 	^ (self selectionMode = #column)
