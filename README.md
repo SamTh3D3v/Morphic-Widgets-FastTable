@@ -37,12 +37,39 @@ table := FTTableMorph new.
 * Cell widgets:
 
   - FTHeaderColumnCellMorph.
+  An example of creating the header cells from the data source:
+  ```
+  headerColumn: column
+	column id ifNil: [ ^ nil ]. 
+	^ FTHeaderColumnCellMorph new 
+		listCentering: #left;
+		column: column;
+		table:self table;
+		addMorph: (self getCellMorphContent:column);
+		yourself
+  ```
+  Note that the header's cells needs to know about which property it is bound to in order for the sorting other column related stuff to works, you need to pass the property #name to each column (one place to do it is when creating the data source in the cellColumn:row: message, like so `	column id = 'clumnId' ifTrue: [ column property: #propertyName. ^ self propertyCellCreator: column row: rowIndex ].`  )
   - FTCheckBoxCellMorph.
+  ```
+  FTCheckBoxCellMorph table: aFastTable content: aBoolean  allowEdit: aBoolean position: anArrayWithRowAndColumnIndexes
+  ```
   - FTDateCellMorph.
+  ```
+  FTDateCellMorph  table: aFastTable  date: aDate allowEdit: aBoolean position: anArrayWithRowAndColumnIndexes
+  ```
   - FTDropListCellMorph.
+  ```
+  FTDropListCellMorph table: aFastTable datasource: anArray selectedItem: anObject allowEdit: aBoolean position: anArrayWithRowAndColumnIndexes
+  ```
   - FTLabelCellMorph.
+  ```
+  FTLabelCellMorph table: aFastTable content: aString allowEdit: aBoolean position: anArrayWithRowAndColumnIndexes
+  ```
   - FTTextEditCellMorph.
-
+  ```
+  FTTextEditCellMorph table: aFastTable content: aString allowEdit: aBoolean position: anArrayWithRowAndColumnIndexes
+  ```
+*Check out exampleTable7 for a full demo about the above cell widgets.*
 ## Remaining work 
 * Build a data sheet widget, to create sheet objects easily. The widget is based on fast tables and on the FTTextEditCellMorph 
 with some advanced functionalities.
