@@ -20,7 +20,7 @@ table := FTTableMorph new.
 ```
 | Message | Description |
 | --- | --- |
-| table IsColumnSelectionMode | returns true if column selection mode is enabled. |
+| table isCellSelectionMode | returns true if cell's selection mode is enabled. |
 | table enableCellSelectionMode | enable cell selection mode.|
 | table enableRowSelectionMode | enable row selection mode.|
 | table SelectedCellsIndex | return the single selected cell.|
