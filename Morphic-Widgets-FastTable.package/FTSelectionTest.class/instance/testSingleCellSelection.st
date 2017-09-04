@@ -4,6 +4,7 @@ testSingleCellSelection
 "Test whether selecting a single cell really add the cell index to the selected cells collection in the table "
 	"enable cell's seletion mode and deselect all cells"
 	table enableCellSelectionMode.
+	table beSingleSelection.
 	table deselectAllCells.
 	"select a single cell randomly"	
 	columnsCount := table columns size.
