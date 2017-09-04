@@ -33,7 +33,7 @@ table := FTTableMorph new.
 
   
 * Row height changing 
-
+* Column sorting
 * Cell widgets:
 
   - FTHeaderColumnCellMorph.
