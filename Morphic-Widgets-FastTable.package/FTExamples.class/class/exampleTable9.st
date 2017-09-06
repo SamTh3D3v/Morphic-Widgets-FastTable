@@ -4,8 +4,8 @@ exampleTable9
    "two tables with the same datasource"
 
 	<example>
-	|pane table1 table2 ds|
-ds:=FTCellSampleDataSource new:10.
+	|pane table1 table2 dataSource|
+dataSource :=FTCellSampleDataSource new:10.
 
 table1 := FTTableMorph new
 		extent: 500@500;
@@ -16,7 +16,7 @@ table1 := FTTableMorph new
 		addColumn: (FTColumn id: 'column4');
 		addColumn: (FTColumn id: 'column5');	
 		addColumn: (FTColumn id: 'column6');	
-		dataSource: ds;
+		dataSource: dataSource;
 		selectRowIndex: 1;
 		showFirstRowSelection;	
 		beMultipleSelection;		
@@ -31,7 +31,7 @@ table2 := FTTableMorph new
 		addColumn: (FTColumn id: 'column4');
 		addColumn: (FTColumn id: 'column5');	
 		addColumn: (FTColumn id: 'column6');	
-		dataSource: ds;
+		dataSource: dataSource;
 		selectRowIndex: 1;
 		showFirstRowSelection;	
 		beMultipleSelection;		
