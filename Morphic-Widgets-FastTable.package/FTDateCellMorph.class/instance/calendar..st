@@ -1,3 +1,3 @@
 accessing
 calendar: aCalendarMorph
-	calendar := aCalendarMorph 
+	calendar :=  aCalendarMorph 
