@@ -1,11 +1,11 @@
 # Morphic-Widgets-FastTable
 
-FastTables are a couple of table implementations for Pharo, they were integrated into Pharo to provide better
-performances, unlimited data source, and extensible tables that could handle complex element morphs very well.
+FastTables are a couple of table implementations for Pharo. They were integrated into Pharo to provide better
+performance, unlimited data source size, and extensible tables that could handle complex element morphs very well.
 The following repository contains the core package used to implement FastTables. A couple of improvements and 
 extensions were made to the original package to provide some better FT family widgets that could fulfill much bigger 
 variety of applications.
-The improvements are highlighted bellow and a link to a demo video is also provided at the end.
+The improvements are highlighted below and a link to a demo video is also provided at the end.
 
 
 ## Improvements:
@@ -48,7 +48,7 @@ table := FTTableMorph new.
 		addMorph: (self getCellMorphContent:column);
 		yourself
   ```
-  Note that the header's cells needs to know about which property it is bound to in order for the sorting other column related stuff to works, you need to pass the property #name to each column (one place to do it is when creating the data source in the cellColumn:row: message, like so `	column id = 'clumnId' ifTrue: [ column property: #propertyName. ^ self propertyCellCreator: column row: rowIndex ].`  )
+  Note that the header's cells needs to know about which property it is bound to in order for the sorting other column related stuff to work. You need to pass the property #name to each column (one place to do it is when creating the data source in the cellColumn:row: message, like so `	column id = 'columnId' ifTrue: [ column property: #propertyName. ^ self propertyCellCreator: column row: rowIndex ].`  )
   - FTCheckBoxCellMorph.
   ```
   FTCheckBoxCellMorph table: aFastTable content: aBoolean  allowEdit: aBoolean position: anArrayWithRowAndColumnIndexes
